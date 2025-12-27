@@ -552,3 +552,125 @@ nav{
     transform: translateY(-10px);
     filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.3));
 }
+
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .left_container,
+  .right_container {
+    width: 100%;
+    height: auto;
+  }
+
+  .bottom_shoes_slider {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+
+  .large_text {
+    font-size: 38px;
+  }
+
+  .selected_product_img {
+    right: 0;
+    top: -2rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .nav_content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search_input {
+    width: 220px;
+    margin-left: 0;
+  }
+
+  .brand_type {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .large_text {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .bottom_shoes_slider {
+    display: none; /* hide carousel on small screens */
+  }
+
+  .selected_product {
+    height: 300px;
+  }
+
+  .selected_product_img {
+    width: 90%;
+    transform: rotate(-15deg);
+  }
+
+  .size_list {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .circle1,
+  .circle2 {
+    display: none; /* remove floating elements */
+  }
+
+  .social_icons {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .large_text {
+    font-size: 24px;
+  }
+
+  .search_input {
+    width: 180px;
+  }
+
+  .card_shoe {
+    width: 130px;
+    height: 180px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .selected_product_text {
+    font-size: 22px;
+  }
+}
